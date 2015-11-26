@@ -1,0 +1,24 @@
+#navigationbar{
+	background: $color-blue;
+	padding: $padding-vertical $padding-horizontal;
+}
+
+.navigationbar-link-wrapper{
+	text-align: center;
+	list-style-type: none;
+
+	@media only screen and (max-width: 640px){
+		text-align: left;
+	}
+
+	li{
+		display: inline-block;
+		margin: 0 15px;
+
+		@media only screen and (max-width: 640px){
+			a {
+				display: none;
+			}
+		}
+	}
+}

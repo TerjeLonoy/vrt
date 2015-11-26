@@ -1,0 +1,20 @@
+*{
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: $color-darkblue;
+	color: $color-darkblue;
+}
+
+.mobile-only{
+	display: none;
+
+	@media (max-width: 640px){
+		display: block!important;
+	}
+}

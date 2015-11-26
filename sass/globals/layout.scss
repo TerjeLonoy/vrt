@@ -1,0 +1,41 @@
+// Variables
+$padding-horizontal: 20px;
+$padding-vertical: 15px;
+$padding-vertical-large: 30px;
+$padding-horizontal-small: 10px;
+$padding-vertical-small: 8px;
+
+$margin-horizontal: 15px;
+$margin-horizontal-percentage: 3%;
+
+$border-radius-global: 3px;
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+// Mixins
+@mixin mobile {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin clearafter () {
+	&:after{
+		display: table;
+		clear: both;
+		content: "";
+	}
+}
