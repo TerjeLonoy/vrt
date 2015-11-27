@@ -1,4 +1,4 @@
 # Dependecies
-*gulp
-*gulp-phantomcss
-*gulp-sass
+* gulp
+* gulp-phantomcss
+* gulp-sass
